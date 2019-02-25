@@ -1,0 +1,132 @@
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Fjalla";
+  src: url("fonts/FjallaOne-Regular.ttf");
+}
+
+/* GRID SYSTEM */
+.grid-item {
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  float: left;
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-wrap {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.l-row:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.l-header {
+  width: 100%;
+  height: 600px;
+  background: url("../images/background-mobile.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin: 0;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.l-about {
+  width: calc(100% - 20px);
+  height: 200px;
+}
+
+.l-gallery {
+  width: calc(100% - 20px);
+  height: 300px;
+}
+
+.l-tour {
+  width: calc(100% - 20px);
+  height: 80px;
+}
+
+.column {
+  width: calc((100% - 24px * 12) / 12);
+  margin-right: 12px;
+  margin-left: 12px;
+  background: blue;
+  opacity: 0.25;
+  float: left;
+  height: 80px;
+}
+
+/* HEADER */
+.logo {
+  color: #fff;
+  font-family: 'Fjalla', sans-serif;
+  font-size: 1.7rem;
+  float: left;
+}
+
+.hamburger-menu {
+  float: right;
+}
+
+.bar:first-child {
+  margin-top: 7px;
+}
+
+.bar {
+  width: 31px;
+  height: 5px;
+  margin-bottom: 4px;
+  background-color: #ED1C24;
+  border-radius: 5px;
+}
+
+.photo-credit {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Fjalla', sans-serif;
+  font-size: 0.8rem;
+}
+
+.photo-credit:hover {
+  color: #ED1C24;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-header {
+    width: calc(100% - 20px);
+    height: 500px;
+  }
+
+  .l-about {
+    width: calc((100% - 20px * 2) / 2);
+  }
+
+  .l-gallery {
+    width: calc((100% - 20px * 3) / 3);
+  }
+
+  .l-tour {
+    width: calc((100% - 20px * 4) / 4);
+  }
+}
