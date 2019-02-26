@@ -74,19 +74,24 @@ h2 {
   box-shadow: 0 5px 50px 1px rgba(0, 0, 0, .5);
 }
 
-.l-about {
-  width: calc(100% - 20px);
-  height: 200px;
+.l-event {
+  width: 100%;
+  border-bottom: 1px solid #5F5449;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 25px 0;
+  background-color: transparent;
 }
 
-.l-gallery {
+.l-media {
   width: calc(100% - 20px);
   height: 300px;
 }
 
-.l-tour {
+.l-biography {
   width: calc(100% - 20px);
-  height: 80px;
+  height: 200px;
 }
 
 .column {
@@ -135,21 +140,43 @@ h2 {
   color: #ED1C24;
 }
 
+/* EVENTS */
+.date {
+  color: #D72638;
+  font-size: 1.1rem;
+}
+
+.location {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.city {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.time {
+  font-weight: 300;
+}
+
 @media only screen and (min-width: 768px) {
   .l-header {
     width: calc(100% - 20px);
     height: 500px;
   }
 
-  .l-about {
-    width: calc((100% - 20px * 2) / 2);
+  .l-event {
+    width: calc((100% - 20px * 4) / 4);
   }
 
-  .l-gallery {
+  .l-media {
     width: calc((100% - 20px * 3) / 3);
   }
 
-  .l-tour {
-    width: calc((100% - 20px * 4) / 4);
+  .l-biography {
+    width: calc((100% - 20px * 2) / 2);
   }
 }
