@@ -17,6 +17,19 @@ html, body {
   src: url("fonts/FjallaOne-Regular.ttf");
 }
 
+/* GLOBAL STYLES */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fjalla", serif;
+  color: #5F5449;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 500;
+}
+
 /* GRID SYSTEM */
 .grid-item {
   margin-bottom: 20px;
