@@ -30,13 +30,17 @@ h2 {
   font-weight: 500;
 }
 
+.gray-background {
+  background-color: #F0EDED;
+}
+
 /* GRID SYSTEM */
 .grid-item {
   margin-bottom: 20px;
   margin-right: 10px;
   margin-left: 10px;
   float: left;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   display: flex;
   justify-content: space-between;
 }
@@ -54,11 +58,11 @@ h2 {
 }
 
 .l-row:first-child {
-  margin: 0;
+  padding: 0;
 }
 
 .l-row {
-  margin: 60px 0;
+  padding-top: 60px;
 }
 
 .l-header {
@@ -87,6 +91,7 @@ h2 {
 .l-media {
   width: calc(100% - 20px);
   height: 300px;
+  overflow: hidden;
 }
 
 .l-biography {
@@ -160,6 +165,31 @@ h2 {
 
 .time {
   font-weight: 300;
+}
+
+/* MEDIA */
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .thumbnail-image {
+  width: 100%;
+  min-width: 280px;
+  margin-top: 15px;
+}
+
+.slider-wrapper .thumbnail:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/play_button.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 17vw;
 }
 
 @media only screen and (min-width: 768px) {
