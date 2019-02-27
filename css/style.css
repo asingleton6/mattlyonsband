@@ -112,6 +112,11 @@ p {
   flex-direction: column;
 }
 
+.l-contact {
+  width: calc(100% - 20px);
+  flex-direction: column;
+}
+
 .column {
   width: calc((100% - 24px * 12) / 12);
   margin-right: 12px;
@@ -210,6 +215,85 @@ p {
   width: 100%;
   height: 100%;
   padding-top: 30px;
+}
+
+/* CONTACT */
+form {
+  padding: 25px;
+}
+
+input.form-input {
+  background-color: transparent;
+  color: #5F5449;
+  border: 0;
+  border-bottom: 1px solid #5F5449;
+  padding: 20px 0;
+  margin-bottom: 0;
+  width: 100%;
+  font-size: 1em;
+}
+
+input.form-input {
+  height: 70px;
+}
+
+input.form-input:nth-child(3) {
+  margin-bottom: 80px;
+}
+
+textarea.form-input {
+  background-color: #fff;
+  color: #5F5449;
+  border-radius: 5px;
+  border: 1px solid #5F5449;
+  padding: 20px 0;
+  margin-top: 25px;
+  width: 100%;
+  font-size: 1em;
+  box-shadow: 2px 5px 11px rgba(0, 0, 0, 0.11);
+}
+
+label {
+  margin-top: 80px;
+}
+
+.form-input::placeholder, textarea.form-input::placeholder, label {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5F5449;
+  opacity: 1;
+  font-weight: normal;
+  font-family: "Optima", serif;
+  /* Firefox */
+}
+
+.form-input:-ms-input-placeholder, .form-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #5F5449;
+  font-weight: normal;
+  font-family: "Optima", serif;
+}
+
+.form-input::-ms-input-placeholder, .form-input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #5F5449;
+  font-weight: normal;
+  font-family: "Optima", serif;
+}
+
+.antispam {
+  display: none;
+}
+
+.btn {
+  width: 100%;
+  background: #D72638;
+  color: #fff;
+  font-family: "fjalla";
+  height: 70px;
+  font-size: 1.4em;
+  border-radius: 5px;
+  border: 1px solid #53080B;
+  margin-top: 25px;
 }
 
 @media only screen and (min-width: 768px) {
