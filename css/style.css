@@ -34,9 +34,22 @@ h2 {
   background-color: #F0EDED;
 }
 
+.brown-text {
+  color: #5F5449 !important;
+}
+
+p {
+  padding: 15px 25px;
+  line-height: 1.8rem;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* GRID SYSTEM */
 .grid-item {
-  margin-bottom: 20px;
   margin-right: 10px;
   margin-left: 10px;
   float: left;
@@ -96,7 +109,7 @@ h2 {
 
 .l-biography {
   width: calc(100% - 20px);
-  height: 200px;
+  flex-direction: column;
 }
 
 .column {
@@ -175,7 +188,7 @@ h2 {
 .slider-wrapper .thumbnail-image {
   width: 100%;
   min-width: 280px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .slider-wrapper .thumbnail:after {
@@ -190,6 +203,13 @@ h2 {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 17vw;
+}
+
+/* BIOGRAPHY */
+.l-biography img {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
 }
 
 @media only screen and (min-width: 768px) {
