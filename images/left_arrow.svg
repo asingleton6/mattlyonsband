@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="37px" viewBox="0 0 24 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Slider Arrow Left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(-1231.000000, -1619.000000)" id="Media" stroke="#ED1C24" stroke-width="5">
+            <g transform="translate(0.000000, 1273.000000)">
+                <g id="Slider-Arrow-Left" transform="translate(1242.500000, 365.000000) scale(-1, 1) translate(-1242.500000, -365.000000) translate(1233.000000, 349.000000)">
+                    <path d="M0.36,15.5789474 L17.64,0.421052632" id="Line"></path>
+                    <path d="M1.12990489,31.4241913 L17.9253899,16.3908594" id="Line" transform="translate(9.527647, 23.907525) scale(-1, 1) rotate(1.000000) translate(-9.527647, -23.907525) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

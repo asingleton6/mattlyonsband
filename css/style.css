@@ -50,6 +50,11 @@ p {
   text-align: center;
 }
 
+.position-relative {
+  position: relative;
+  height: 367px;
+}
+
 /* GRID SYSTEM */
 .grid-item {
   margin-right: 10px;
@@ -61,9 +66,14 @@ p {
 }
 
 .l-wrap {
-  max-width: 1140px;
+  max-width: 1470px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.row-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .l-row:after {
@@ -202,6 +212,10 @@ p {
   margin-top: 30px;
 }
 
+.left-arrow, .right-arrow {
+  display: none;
+}
+
 .slider-wrapper .thumbnail:after {
   content: "";
   display: inline-block;
@@ -213,7 +227,7 @@ p {
   background-image: url("../images/play_button.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 17vw;
+  background-size: 70px;
 }
 
 /* BIOGRAPHY */
@@ -348,7 +362,23 @@ label {
   }
 
   .l-media {
-    width: calc((100% - 20px * 3) / 3);
+    width: calc(100% - 160px);
+    margin: 0 80px;
+  }
+
+  .left-arrow, .right-arrow {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    bottom: calc(50% - 67px);
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
   }
 
   .l-biography {
