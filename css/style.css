@@ -41,7 +41,7 @@ h2 {
 }
 
 p {
-  padding: 15px 25px;
+  padding: 15px 0;
   line-height: 1.8rem;
   margin: 0;
 }
@@ -55,12 +55,15 @@ p {
   height: 367px;
 }
 
+.padding-mobile {
+  padding: 0 30px;
+}
+
 /* GRID SYSTEM */
 .grid-item {
   margin-right: 10px;
   margin-left: 10px;
   float: left;
-  /* background-color: #ccc; */
   display: flex;
   justify-content: space-between;
 }
@@ -87,7 +90,7 @@ p {
 }
 
 .l-row {
-  padding-top: 60px;
+  padding: 50px 0;
 }
 
 .l-header {
@@ -173,6 +176,7 @@ p {
   text-decoration: none;
   font-family: 'Fjalla', sans-serif;
   font-size: 0.8rem;
+  padding-top: 10px;
 }
 
 .photo-credit:hover {
@@ -238,8 +242,13 @@ p {
 }
 
 /* CONTACT */
+.contact-info {
+  padding: 0 15px;
+  padding-bottom: 25px;
+}
+
 form {
-  padding: 25px;
+  padding: 25px 0;
 }
 
 input.form-input {
@@ -316,6 +325,12 @@ label {
   margin-top: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 644px) {
   .l-header {
     height: 500px;
@@ -383,5 +398,26 @@ label {
 
   .l-biography {
     width: calc((100% - 20px * 2) / 2);
+  }
+
+  .photo-credit {
+    text-align: left;
+  }
+
+  .l-contact {
+    width: calc(50% - 20px);
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  input.form-input {
+    padding: 42px 0;
   }
 }
