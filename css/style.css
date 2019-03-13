@@ -170,6 +170,30 @@ p {
   border-radius: 5px;
 }
 
+.navbar-desktop ul {
+  float: right;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-desktop li {
+  float: left;
+  padding: 0 18px;
+}
+
+.navbar-desktop a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 3px;
+  font-size: 1.3rem;
+}
+
+.navbar-desktop a:hover, .navbar-desktop .active {
+  text-decoration: none;
+  border-bottom: 3px solid #ED1C24;
+}
+
+/* PHOTO CREDIT */
 .photo-credit {
   text-align: center;
   color: #fff;
@@ -341,6 +365,10 @@ label {
 }
 
 @media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 2.7rem;
+  }
+
   .l-row {
     padding: 100px 0;
   }
@@ -419,5 +447,17 @@ label {
 @media only screen and (min-width: 992px) {
   input.form-input {
     padding: 42px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .l-header {
+    padding: 30px 9%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .l-header {
+    height: 600px;
   }
 }
