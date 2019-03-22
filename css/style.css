@@ -123,7 +123,7 @@ p {
 .l-media {
   width: calc(100% - 20px);
   height: 300px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .l-biography {

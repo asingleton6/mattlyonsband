@@ -1,5 +1,4 @@
 //Mobile menu - clicking on the hamburger icon opens up the dropdown menu
-
 //Gather variables
 let hamburger = document.getElementsByClassName('hamburger-menu');
 let mobileMenu = document.getElementsByClassName('menu-wrapper')[0];
@@ -17,32 +16,50 @@ function toggleMenu() {
 }
 
 //Gather variables
-let slider = document.getElementsByClassName('slider-wrapper');
-let left = document.getElementsByClassName('left-arrow');
-let right = document.getElementsByClassName('right-arrow');
-let sliderCount = document.getElementsByClassName('slider-wrapper').length;
+let slider = document.querySelectorAll('.slider-wrapper');
+let left = document.querySelector('.left-arrow');
+let right = document.querySelector('.right-arrow');
 let position = 0;
+//Hide right arrow on initial load
+right.style.display = "none";
 
-function slideLeft() {
-  //Left arrow click translate left
+function slide(arrow) {
+  //Gather variables
   let i;
-  //Move slider pieces
-  for (i = 0; i < sliderCount; i++) {
-    //Keep track of slider position
-    position = -50;
-    document.getElementsByClassName('slider-wrapper')[i].style.transform = "translate(" + position + "px)";
+  let sliderCount = document.querySelectorAll('.slider-wrapper').length;
+
+  //Move slider items to the left until it reaches the limit
+  if (arrow === 'left' && position !== -300) {
+    //Move by 150px
+    position = position - 150;
+    for (i = 0; i < sliderCount; i++) {
+      slider[i].style.transform = "translate(" + position + "px)";
+    }
+    //Show right arrow if slider position is greater than 0
+    if (position !== 0) {
+      right.style.display = "block";
+    }
+  }
+
+  //Move slider items to the right until it reaches the beginning
+  if (arrow === 'right' && position !== 0) {
+    //Move by 150px
+    position = position + 150;
+    for (i = 0; i < sliderCount; i++) {
+      slider[i].style.transform = "translate(" + position + "px)";
+    }
+    //Remove right arrow if the slider reaches the beginning
+    if (position === 0) {
+      right.style.display = "none";
+    }
   }
   console.log(position);
 }
 
-function slideRight() {
-  //Right arrow click translate right
-  let i;
-  //Move slider pieces
-  for (i = 0; i < sliderCount; i++) {
-    //Keep track of slider position
-    position = 50;
-    document.getElementsByClassName('slider-wrapper')[i].style.transform = "translate(" + position + "px)";
-  }
-  console.log(position);
-}
+//Add event listeners for the left and right arrows.
+left.addEventListener("click", function(x) {
+  slide("left");
+});
+right.addEventListener("click", function(x) {
+  slide("right");
+});
