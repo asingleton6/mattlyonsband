@@ -1,4 +1,22 @@
-//Gather variable
+//Mobile menu - clicking on the hamburger icon opens up the dropdown menu
+
+//Gather variables
+let hamburger = document.getElementsByClassName('hamburger-menu');
+let mobileMenu = document.getElementsByClassName('menu-wrapper')[0];
+let firstBar = document.getElementsByClassName('bar')[0];
+let secondBar = document.getElementsByClassName('bar')[1];
+let thirdBar = document.getElementsByClassName('bar')[2];
+
+
+function toggleMenu() {
+  //Toggle animation classes
+  mobileMenu.classList.toggle("menu-wrapper-hide");
+  firstBar.classList.toggle("rotate");
+  secondBar.classList.toggle("rotate-negative");
+  thirdBar.classList.toggle("slide-right");
+}
+
+//Gather variables
 let slider = document.getElementsByClassName('slider-wrapper');
 let left = document.getElementsByClassName('left-arrow');
 let right = document.getElementsByClassName('right-arrow');

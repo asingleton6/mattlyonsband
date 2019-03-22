@@ -14,10 +14,18 @@
       <div class="grid-item l-header">
         <nav class="navbar-mobile hide-desktop">
           <div class="logo">Matt Lyons</div>
-          <div class="hamburger-menu">
+          <div class="hamburger-menu" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
+          </div>
+          <div id="menu" class="menu-wrapper menu-wrapper-hide">
+            <ul>
+              <li><a class="active menu-item" href="#events">Events</a></li>
+              <li><a class="menu-item" href="#media">Media</a></li>
+              <li><a class="menu-item" href="#biography">Biography</a></li>
+              <li><a class="menu-item" href="#contact">Contact</a></li>
+            </ul>
           </div>
         </nav>
         <nav class="navbar-desktop hide-mobile">
