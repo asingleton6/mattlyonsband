@@ -20,40 +20,39 @@ let slider = document.querySelectorAll('.slider-wrapper');
 let left = document.querySelector('.left-arrow');
 let right = document.querySelector('.right-arrow');
 let position = 0;
-//Hide right arrow on initial load
-right.style.display = "none";
+//Hide left arrow on initial load
+left.style.display = "none";
 
 function slide(arrow) {
   //Gather variables
   let i;
   let sliderCount = document.querySelectorAll('.slider-wrapper').length;
 
-  //Move slider items to the left until it reaches the limit
-  if (arrow === 'left' && position !== -300) {
-    //Move by 150px
-    position = position - 150;
-    for (i = 0; i < sliderCount; i++) {
-      slider[i].style.transform = "translate(" + position + "px)";
-    }
-    //Show right arrow if slider position is greater than 0
-    if (position !== 0) {
-      right.style.display = "block";
-    }
-  }
-
-  //Move slider items to the right until it reaches the beginning
-  if (arrow === 'right' && position !== 0) {
+  //Move slider items to the left until it reaches the beginning
+  if (arrow === 'left' && position !== 0) {
     //Move by 150px
     position = position + 150;
     for (i = 0; i < sliderCount; i++) {
       slider[i].style.transform = "translate(" + position + "px)";
     }
-    //Remove right arrow if the slider reaches the beginning
+    //Remove left arrow if the slider reaches the beginning
     if (position === 0) {
-      right.style.display = "none";
+      left.style.display = "none";
     }
   }
-  console.log(position);
+
+  //Move slider items to the right until it reaches the limit
+  if (arrow === 'right' && position !== -300) {
+    //Move by 150px
+    position = position - 150;
+    for (i = 0; i < sliderCount; i++) {
+      slider[i].style.transform = "translate(" + position + "px)";
+    }
+    //Show left arrow if slider position is greater than 0
+    if (position !== 0) {
+      left.style.display = "block";
+    }
+  }
 }
 
 //Add event listeners for the left and right arrows.
