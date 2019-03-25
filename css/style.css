@@ -292,14 +292,16 @@ p {
 /* MEDIA */
 .slider-wrapper {
   position: relative;
-  margin-right: 15px;
+  margin: 15px 15px 15px 0;
   transition-duration: 1.5s;
 }
 
-.slider-wrapper .thumbnail-image {
-  width: 100%;
-  min-width: 280px;
+.slider-wrapper .thumbnail {
   margin-top: 30px;
+}
+
+.slider-wrapper .thumbnail-image {
+  height: 100%;
   box-shadow: 2px 5px 11px rgba(0, 0, 0, .5);
   border-radius: 5px;
 }
