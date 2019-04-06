@@ -14,7 +14,7 @@ function toggleMenu() {
   secondBar.classList.toggle("rotate-negative");
   thirdBar.classList.toggle("slide-right");
 }
-
+//SLIDER CONTROLS
 //Gather variables
 let slider = document.querySelectorAll('.slider-wrapper');
 let left = document.querySelector('.left-arrow');
