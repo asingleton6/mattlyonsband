@@ -62,3 +62,52 @@ left.addEventListener("click", function(x) {
 right.addEventListener("click", function(x) {
   slide("right");
 });
+
+//POPUP WINDOW
+//Gather variables
+let videosContainer = document.querySelector("#l-media");
+let thumbnails = document.querySelectorAll(".thumbnail");
+let thumbnailCount = document.querySelectorAll(".thumbnail").length;
+let popupContainer = document.querySelector(".popupcontainer");
+let popups = document.querySelectorAll(".popup");
+let closeButton = document.querySelector(".close-button");
+let i;
+
+//Function open popup window
+function openPopup(i) {
+  popups[i].style.display = "block";
+}
+//Function close popup window
+function closePopup(i) {
+  popups[i].style.display = "none";
+}
+
+//Use event bubbling to dynamically determine which element was selected
+videosContainer.addEventListener('click', function(event) {
+  if (event.target.classList.contains('thumbnail')) {
+    //Determine the current thumbnail selected
+    let c = event.srcElement;
+
+    //Determine which popup window to open
+    for (i = 0; i < 3; i++) {
+      if (c === thumbnails[i]) {
+        openPopup(i);
+      }
+    }
+  }
+}, false);
+
+//Event listener to determine if close button selected or off screen click
+popupContainer.addEventListener('click', function(event) {
+  if (event.target.classList.contains('close-button') || event.target.classList.contains('popup')) {
+    //Determine the current popup window selected
+    let c = event.srcElement;
+
+    //Determine which popup window to close
+    for (i = 0; i < 3; i++) {
+      if (c === popups[i] || closeButton) {
+        closePopup(i);
+      }
+    }
+  }
+}, false);
