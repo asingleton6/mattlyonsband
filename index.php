@@ -12,7 +12,7 @@
 <body>
   <div class="l-wrap">
     <div class="l-row">
-      <div class="grid-item l-header">
+      <div class="grid-item l-nav">
         <nav class="navbar-mobile hide-desktop">
           <div class="logo">Matt Lyons</div>
           <div class="hamburger-menu" onclick="toggleMenu()">
@@ -39,6 +39,10 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+      </div>
+    </div>
+    <div class="l-row">
+      <div class="grid-item l-header">
         <a class="photo-credit" href="https://www.instagram.com/fleisherphotography" target="_blank">Photo Credit: @fleisherphotography</a>
       </div>
     </div>
