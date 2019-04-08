@@ -154,25 +154,24 @@
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
           </p>
         </div>
-        <div class="grid-item l-contact">
-          <form role="form" method="post">
-            <input type="text" id="name" class="form-input" placeholder="Name" name="name" value="">
-            <span id="name-error" class="error"><?= $name_error ?></span>
-            <input type="text" id="email" class="form-input" placeholder="Email" name="email" value="">
-            <span id="email-error" class="error"><?= $email_error ?></span>
-            <input type="text" id="phone" class="form-input" placeholder="Phone" name="phone" value="">
-            <span id="phone-error" class="error"><?= $phone_error ?></span>
-          </form>
-        </div>
-        <div class="grid-item l-contact">
-          <form role="form" method="post" action="index.php#contact">
-            <p class="antispam">Leave this empty: <input type="text" name="url"></p>
-            <label>Message</label>
-            <textarea class="form-input" rows="8" type="text" placeholder="" name="message"></textarea>
-            <button type="submit" class="btn">Send</button>
-            <span class="success"><?= $success; ?></span>
-          </form>
-        </div>
+        <form role="form" method="post" action="index.php#contact">
+          <div class="grid-item l-contact">
+            <form role="form" method="post" action="index.php#contact">
+              <input type="text" id="name" class="form-input" placeholder="Full Name" name="name" value="<?= $name ?>">
+              <span id="name-error" class="error"><?= $name_error ?></span>
+              <input type="text" id="email" class="form-input" placeholder="Email" name="email" value="<?= $email ?>">
+              <span id="email-error" class="error"><?= $email_error ?></span>
+              <input type="text" id="phone" class="form-input" placeholder="Phone" name="phone" value="<?= $phone ?>">
+              <span id="phone-error" class="error"><?= $phone_error ?></span>
+          </div>
+          <div class="grid-item l-contact">
+              <p class="antispam">Leave this empty: <input type="text" name="url"></p>
+              <label>Message</label>
+              <textarea class="form-input" type="text" placeholder="" name="message"><?= $message ?></textarea>
+              <button type="submit" class="btn">Send</button>
+              <span class="success"><?= $success; ?></span>
+          </div>
+        </form>
       </div>
     </div>
   </div>
