@@ -311,6 +311,10 @@ p {
 }
 
 .left-arrow, .right-arrow {
+  display: none;
+}
+
+.hide-left-arrow {
   display: none !important;
 }
 

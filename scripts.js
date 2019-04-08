@@ -21,7 +21,7 @@ let left = document.querySelector('.left-arrow');
 let right = document.querySelector('.right-arrow');
 let position = 0;
 //Hide left arrow on initial load
-left.style.display = "none";
+left.classList.add("hide-left-arrow");
 
 function slide(arrow) {
   //Gather variables
@@ -37,7 +37,7 @@ function slide(arrow) {
     }
     //Remove left arrow if the slider reaches the beginning
     if (position === 0) {
-      left.style.display = "none";
+      left.classList.add("hide-left-arrow");
     }
   }
 
@@ -50,7 +50,7 @@ function slide(arrow) {
     }
     //Show left arrow if slider position is greater than 0
     if (position !== 0) {
-      left.style.display = "block";
+      left.classList.remove("hide-left-arrow");
     }
   }
 }
