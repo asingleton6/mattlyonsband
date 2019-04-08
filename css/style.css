@@ -425,6 +425,10 @@ label {
   margin-top: 80px;
 }
 
+.error {
+  color: #d62637;
+}
+
 .form-input::placeholder, textarea.form-input::placeholder, label {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #5F5449;

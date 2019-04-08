@@ -1,3 +1,4 @@
+<?php include('email_form.php'); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -99,7 +100,7 @@
         <div class="popup">
           <div class="popup-content">
             <img class="close-button" src="images/close.svg"/>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qILk4n3lkX8" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/qILk4n3lkX8?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="video-details">
               <h3>Whipping Post (Allman Brothers Cover)</h3>
               <h4>feat. Sean Clive</h4>
@@ -109,7 +110,7 @@
         <div class="popup">
           <div class="popup-content">
             <img class="close-button" src="images/close.svg"/>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Y_BCYep_8JU" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="player2" width="100%" height="315" src="https://www.youtube.com/embed/Y_BCYep_8JU?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="video-details">
               <h3>Long Train Running/Superstition Medley</h3>
             </div>
@@ -118,7 +119,7 @@
         <div class="popup">
           <div class="popup-content">
             <img class="close-button" src="images/close.svg"/>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/eDdGhyr2LFo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="player3" width="100%" height="315" src="https://www.youtube.com/embed/eDdGhyr2LFo?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="video-details">
               <h3>Fourth of July</h3>
             </div>
@@ -156,11 +157,11 @@
         <div class="grid-item l-contact">
           <form role="form" method="post">
             <input type="text" id="name" class="form-input" placeholder="Name" name="name" value="">
-            <!-- <span id="name-error" class="error"><?= $name_error ?></span> -->
+            <span id="name-error" class="error"><?= $name_error ?></span>
             <input type="text" id="email" class="form-input" placeholder="Email" name="email" value="">
-            <!-- <span id="email-error" class="error"><?= $email_error ?></span> -->
+            <span id="email-error" class="error"><?= $email_error ?></span>
             <input type="text" id="phone" class="form-input" placeholder="Phone" name="phone" value="">
-            <!-- <span id="phone-error" class="error"><?= $phone_error ?></span> -->
+            <span id="phone-error" class="error"><?= $phone_error ?></span>
           </form>
         </div>
         <div class="grid-item l-contact">
@@ -169,7 +170,7 @@
             <label>Message</label>
             <textarea class="form-input" rows="8" type="text" placeholder="" name="message"></textarea>
             <button type="submit" class="btn">Send</button>
-            <!-- <span class="success"><?= $success; ?></span> -->
+            <span class="success"><?= $success; ?></span>
           </form>
         </div>
       </div>
