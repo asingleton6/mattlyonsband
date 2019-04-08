@@ -220,7 +220,7 @@ p {
 }
 
 .menu-wrapper a {
-  font-size: 2em;
+  font-size: 1.7em;
   color: #5F5449;
   text-decoration: none;
   line-height: 2em;
@@ -409,16 +409,12 @@ input.form-input {
   height: 70px;
 }
 
-input.form-input:nth-child(3) {
-  margin-bottom: 80px;
-}
-
 textarea.form-input {
   background-color: #fff;
   color: #5F5449;
   border-radius: 5px;
   border: 1px solid #5F5449;
-  padding: 20px 0;
+  padding: 20px;
   margin-top: 25px;
   width: 100%;
   font-size: 1em;
