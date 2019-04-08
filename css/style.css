@@ -390,10 +390,6 @@ p {
   padding-bottom: 25px;
 }
 
-form {
-  padding: 25px 0;
-}
-
 input.form-input {
   background-color: transparent;
   color: #5F5449;
@@ -410,6 +406,7 @@ input.form-input {
 }
 
 textarea.form-input {
+  height: 186px;
   background-color: #fff;
   color: #5F5449;
   border-radius: 5px;
@@ -422,11 +419,18 @@ textarea.form-input {
 }
 
 label {
-  margin-top: 80px;
+  margin-top: 45px;
 }
 
-.error {
+.error, .success {
   color: #d62637;
+}
+
+.success {
+  padding-top: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .form-input::placeholder, textarea.form-input::placeholder, label {
@@ -588,6 +592,10 @@ label {
 
   input.form-input {
     padding: 42px 0;
+  }
+
+  label {
+    margin-top: 23px;
   }
 }
 
