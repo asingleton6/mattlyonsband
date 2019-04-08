@@ -100,7 +100,7 @@
         <div class="popup">
           <div class="popup-content">
             <img class="close-button" src="images/close.svg"/>
-            <iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/qILk4n3lkX8?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video1" width="100%" height="315" src="https://www.youtube.com/embed/qILk4n3lkX8?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="video-details">
               <h3>Whipping Post (Allman Brothers Cover)</h3>
               <h4>feat. Sean Clive</h4>
@@ -110,7 +110,7 @@
         <div class="popup">
           <div class="popup-content">
             <img class="close-button" src="images/close.svg"/>
-            <iframe id="player2" width="100%" height="315" src="https://www.youtube.com/embed/Y_BCYep_8JU?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video2" width="100%" height="315" src="https://www.youtube.com/embed/Y_BCYep_8JU?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="video-details">
               <h3>Long Train Running/Superstition Medley</h3>
             </div>
@@ -119,7 +119,7 @@
         <div class="popup">
           <div class="popup-content">
             <img class="close-button" src="images/close.svg"/>
-            <iframe id="player3" width="100%" height="315" src="https://www.youtube.com/embed/eDdGhyr2LFo?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video3" width="100%" height="315" src="https://www.youtube.com/embed/eDdGhyr2LFo?enablejsapi=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="video-details">
               <h3>Fourth of July</h3>
             </div>
