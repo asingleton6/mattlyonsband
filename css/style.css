@@ -294,6 +294,7 @@ p {
   position: relative;
   margin: 15px 15px 15px 0;
   transition-duration: 1.5s;
+  max-width: 312px;
 }
 
 .slider-wrapper .thumbnail {
@@ -302,6 +303,7 @@ p {
 
 .slider-wrapper .thumbnail-image {
   height: 100%;
+  max-width: 312px;
   box-shadow: 2px 5px 11px rgba(0, 0, 0, .5);
   border-radius: 5px;
 }
