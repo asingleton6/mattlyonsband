@@ -64,6 +64,12 @@ right.addEventListener("click", function(x) {
 });
 
 //POPUP WINDOW
+// Inject YouTube API script
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 //Gather variables
 let videosContainer = document.querySelector("#l-media");
 let thumbnails = document.querySelectorAll(".thumbnail");
@@ -72,6 +78,29 @@ let popupContainer = document.querySelector(".popupcontainer");
 let popups = document.querySelectorAll(".popup");
 let closeButton = document.querySelector(".close-button");
 let i;
+let players = [];
+
+function onYouTubePlayerAPIReady() {
+  // create the global player from the specific iframe (#video)
+  players[0] = new YT.Player('video1', {
+    events: {
+      // call this function when player is ready to use
+      'onReady': onPlayerReady
+    }
+  });
+  players[1] = new YT.Player('video2', {
+    events: {
+      // call this function when player is ready to use
+      'onReady': onPlayerReady
+    }
+  });
+  players[2] = new YT.Player('video3', {
+    events: {
+      // call this function when player is ready to use
+      'onReady': onPlayerReady
+    }
+  });
+}
 
 //Function open popup window
 function openPopup(i) {
@@ -82,32 +111,34 @@ function closePopup(i) {
   popups[i].style.display = "none";
 }
 
-//Use event bubbling to dynamically determine which element was selected
-videosContainer.addEventListener('click', function(event) {
-  if (event.target.classList.contains('thumbnail')) {
-    //Determine the current thumbnail selected
-    let c = event.srcElement;
+function onPlayerReady(event) {
+  //Use event bubbling to dynamically determine which element was selected
+  videosContainer.addEventListener('click', function(event) {
+    if (event.target.classList.contains('thumbnail')) {
+      //Determine the current thumbnail selected
+      let c = event.srcElement;
 
-    //Determine which popup window to open
-    for (i = 0; i < 3; i++) {
-      if (c === thumbnails[i]) {
-        openPopup(i);
+      //Determine which popup window to open
+      for (i = 0; i < 3; i++) {
+        if (c === thumbnails[i]) {
+          openPopup(i);
+        }
       }
     }
-  }
-}, false);
+  }, false);
 
-//Event listener to determine if close button selected or off screen click
-popupContainer.addEventListener('click', function(event) {
-  if (event.target.classList.contains('close-button') || event.target.classList.contains('popup')) {
-    //Determine the current popup window selected
-    let c = event.srcElement;
-
-    //Determine which popup window to close
-    for (i = 0; i < 3; i++) {
-      if (c === popups[i] || closeButton) {
-        closePopup(i);
+  //Event listener to determine if close button selected or off screen click
+  popupContainer.addEventListener('click', function(event) {
+    if (event.target.classList.contains('close-button') || event.target.classList.contains('popup')) {
+      //Determine the current popup window selected
+      let c = event.srcElement;
+      //Determine which popup window to close
+      for (i = 0; i < 3; i++) {
+        if (c === popups[i] || closeButton) {
+          closePopup(i);
+          players[i].pauseVideo();
+        }
       }
     }
-  }
-}, false);
+  }, false);
+}
