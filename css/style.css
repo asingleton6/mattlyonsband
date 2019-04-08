@@ -87,6 +87,7 @@ p {
 
 .l-row:first-child {
   padding: 0;
+  background-color: #474646;
 }
 
 .l-row {
@@ -261,6 +262,11 @@ p {
   font-family: 'Fjalla', sans-serif;
   font-size: 0.8rem;
   padding-top: 10px;
+}
+
+.l-header .photo-credit {
+  background-color: #474646;
+  max-width: 210px;
 }
 
 .photo-credit:hover {
