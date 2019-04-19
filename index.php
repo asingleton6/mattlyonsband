@@ -1,4 +1,5 @@
 <?php include('email_form.php'); ?>
+<?php include('cache_refresh.php'); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -6,7 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title></title>
+  <link rel="stylesheet" href="<?php echo auto_version('/css/style.css'); ?>" type="text/css" />
+  <title>Matt Lyons</title>
 </head>
 
 <body>
@@ -180,6 +182,7 @@
     </div>
   </div>
   <script src="scripts.js"></script>
+  <script src="<?php echo auto_version('/script.js'); ?>"></script>
 </body>
 
 </html>
