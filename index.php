@@ -19,7 +19,7 @@
       <div class="grid-item l-nav">
         <nav class="navbar-mobile hide-desktop">
           <div class="logo"><a href="#">Matt Lyons</a></div>
-          <div class="hamburger-menu" onclick="toggleMenu()">
+          <div class="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>

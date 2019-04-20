@@ -3,6 +3,7 @@
 let header = document.querySelector(".l-header");
 let navbar = document.querySelector(".l-nav");
 let logo = document.querySelectorAll(".logo");
+let menuWrapper = document.querySelector(".menu-wrapper");
 let headerHeight;
 let y = 0;
 
@@ -21,9 +22,11 @@ function navbarBackgroundScroll() {
   if (y > headerHeight) {
     navbar.classList.add("navbar-background");
     logo[1].classList.add("logo-resize");
+    menuWrapper.classList.add("menu-wrapper-reposition");
   } else if (y < headerHeight) {
     navbar.classList.remove("navbar-background");
     logo[1].classList.remove("logo-resize");
+    menuWrapper.classList.remove("menu-wrapper-reposition");
   }
 }
 //ACTIVE MENU ITEM - add the active class to the currently selected menu item.
@@ -48,22 +51,30 @@ menu.addEventListener('click', function(event) {
     }
   }
 }, false);
+
 //MOBILE MENU - clicking on the hamburger icon opens up the dropdown menu
 //Gather variables
+let navbarMobile = document.querySelector(".navbar-mobile");
 let hamburger = document.getElementsByClassName('hamburger-menu');
-let mobileMenu = document.getElementsByClassName('menu-wrapper')[0];
-let firstBar = document.getElementsByClassName('bar')[0];
-let secondBar = document.getElementsByClassName('bar')[1];
-let thirdBar = document.getElementsByClassName('bar')[2];
-
+let mobileWrapper = document.getElementsByClassName('menu-wrapper')[0];
+let bars = document.querySelectorAll('.bar');
+let z;
 
 function toggleMenu() {
   //Toggle animation classes
-  mobileMenu.classList.toggle("menu-wrapper-hide");
-  firstBar.classList.toggle("rotate");
-  secondBar.classList.toggle("rotate-negative");
-  thirdBar.classList.toggle("slide-right");
+  mobileWrapper.classList.toggle("menu-wrapper-hide");
+  bars[0].classList.toggle("rotate");
+  bars[1].classList.toggle("rotate-negative");
+  bars[2].classList.toggle("slide-right");
 }
+
+//Use bubbling listener for mobile menu
+navbarMobile.addEventListener('click', function(event) {
+  if (event.target.classList.contains('bar') || event.target.classList.contains('menu-wrapper') || event.target.classList.contains('hamburger-menu') || event.target.classList.contains('menu-item')) {
+    toggleMenu();
+  }
+}, false);
+
 //SLIDER CONTROLS
 //Gather variables
 let slider = document.querySelectorAll('.slider-wrapper');
