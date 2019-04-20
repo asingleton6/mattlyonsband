@@ -203,9 +203,9 @@ p {
 
 .navbar-background {
   background-color: #474646;
-  padding: 5px 30px;
+  padding: 15px 30px;
   transition-duration: 0.5s;
-  height: 49px;
+  height: 65px;
 }
 
 /* MOBILE MENU */
@@ -245,7 +245,7 @@ p {
 }
 
 .menu-wrapper-reposition {
-  top: 49px;
+  top: 65px;
 }
 
 .menu-wrapper-hide {
@@ -264,20 +264,20 @@ p {
 }
 
 ul.menu-wrapper li a {
-  font-size: 1.7em;
+  font-size: 2em;
   color: #5F5449;
   text-decoration: none;
   line-height: 2em;
 }
 
-.menu-item {
-  transform: translateX(-10px);
-}
+.menu-item {}
+
+.menu-item-slide {}
 
 #events, #media, #biography, #contact {
   position: absolute;
   left: 0px;
-  top: -49px;
+  top: -65px;
 }
 
 /* MENU ANIMATION */

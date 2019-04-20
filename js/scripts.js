@@ -31,9 +31,9 @@ function navbarBackgroundScroll() {
 }
 //ACTIVE MENU ITEM - add the active class to the currently selected menu item.
 //Gather variables
-let menuItems = document.querySelectorAll(".menu .menu-item");
+let desktopMenuItems = document.querySelectorAll(".navbar-desktop .menu-item");
 let menu = document.querySelector(".menu");
-let current = menuItems[0];
+let current = desktopMenuItems[0];
 let x;
 //Use bubbling event listener to detect which menu item was selected.
 menu.addEventListener('click', function(event) {
@@ -43,10 +43,10 @@ menu.addEventListener('click', function(event) {
 
     //Add active class to selected menu item and remove current
     for (x = 0; x < 4; x++) {
-      if (c === menuItems[x]) {
-        menuItems[x].classList.add("active");
+      if (c === desktopMenuItems[x]) {
+        desktopMenuItems[x].classList.add("active");
         current.classList.remove("active");
-        current = menuItems[x];
+        current = desktopMenuItems[x];
       }
     }
   }
@@ -54,6 +54,7 @@ menu.addEventListener('click', function(event) {
 
 //MOBILE MENU - clicking on the hamburger icon opens up the dropdown menu
 //Gather variables
+let mobileMenuItems = document.querySelectorAll(".navbar-mobile .menu-item");
 let navbarMobile = document.querySelector(".navbar-mobile");
 let hamburger = document.getElementsByClassName('hamburger-menu');
 let mobileWrapper = document.getElementsByClassName('menu-wrapper')[0];
@@ -62,6 +63,9 @@ let z;
 
 function toggleMenu() {
   //Toggle animation classes
+  for (z = 0; z < 4; z++) {
+    mobileMenuItems[z].classList.toggle("menu-item-slide");
+  }
   mobileWrapper.classList.toggle("menu-wrapper-hide");
   bars[0].classList.toggle("rotate");
   bars[1].classList.toggle("rotate-negative");
