@@ -155,9 +155,6 @@
       <div class="row-wrapper padding-mobile">
         <div class="contact-info">
           <h2>Booking & Contact</h2>
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-          </p>
         </div>
         <form role="form" method="post" action="index.php#contact">
           <div class="grid-item l-contact">
