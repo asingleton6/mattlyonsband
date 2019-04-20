@@ -90,12 +90,12 @@
           </div>
           <div class="slider-wrapper">
             <a class="thumbnail">
-              <img class="thumbnail-image" src="images/slider_2.png" alt="whipping post">
+              <img class="thumbnail-image" src="images/slider_2.png" alt="long train running/superstition medley">
             </a>
           </div>
           <div class="slider-wrapper">
             <a class="thumbnail">
-              <img class="thumbnail-image" src="images/slider_3.png" alt="whipping post">
+              <img class="thumbnail-image" src="images/slider_3.png" alt="4th of July">
             </a>
           </div>
         </div>
