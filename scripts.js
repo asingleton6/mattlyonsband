@@ -10,7 +10,13 @@ function navbarBackgroundScroll() {
   //Get the height of the header
   headerHeight = header.offsetHeight;
   headerHeight = (headerHeight / 4);
-  y = document.documentElement.scrollTop;
+  if (typeof(window.pageYOffset) == 'number') {
+    //Safari compliant
+    y = window.pageYOffset;
+  } else {
+    //DOM compliant
+    y = document.body.scrollTop;
+  }
   //Change the background from transparent to black
   if (y > headerHeight) {
     navbar.classList.add("navbar-background");

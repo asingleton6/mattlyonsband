@@ -22,7 +22,6 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          <!-- Fix on Firefox and Safari -->
           <ul class="menu-wrapper menu-wrapper-hide">
             <li><a class="menu-item" href="#events">Events</a></li>
             <li><a class="menu-item" href="#media">Media</a></li>
