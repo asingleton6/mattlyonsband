@@ -23,22 +23,20 @@
             <div class="bar"></div>
           </div>
           <!-- Fix on Firefox and Safari -->
-          <div id="menu" class="menu-wrapper menu-wrapper-hide">
-            <ul>
-              <li><a class="active menu-item" href="#events">Events</a></li>
-              <li><a class="menu-item" href="#media">Media</a></li>
-              <li><a class="menu-item" href="#biography">Biography</a></li>
-              <li><a class="menu-item" href="#contact">Contact</a></li>
-            </ul>
-          </div>
+          <ul class="menu-wrapper menu-wrapper-hide">
+            <li><a class="menu-item" href="#events">Events</a></li>
+            <li><a class="menu-item" href="#media">Media</a></li>
+            <li><a class="menu-item" href="#biography">Biography</a></li>
+            <li><a class="menu-item" href="#contact">Contact</a></li>
+          </ul>
         </nav>
         <nav class="navbar-desktop hide-mobile">
           <div class="logo"><a href="#">Matt Lyons</a></div>
-          <ul>
-            <li><a class="active" href="#events">Events</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#biography">Biography</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="menu">
+            <li><a class="menu-item active" href="#events">Events</a></li>
+            <li><a class="menu-item" href="#media">Media</a></li>
+            <li><a class="menu-item"href="#biography">Biography</a></li>
+            <li><a class="menu-item" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>

@@ -20,7 +20,29 @@ function navbarBackgroundScroll() {
     logo[1].classList.remove("logo-resize");
   }
 }
-//Mobile menu - clicking on the hamburger icon opens up the dropdown menu
+//ACTIVE MENU ITEM - add the active class to the currently selected menu item.
+//Gather variables
+let menuItems = document.querySelectorAll(".menu .menu-item");
+let menu = document.querySelector(".menu");
+let current = menuItems[0];
+let x;
+//Use bubbling event listener to detect which menu item was selected.
+menu.addEventListener('click', function(event) {
+  if (event.target.classList.contains('menu-item')) {
+    //Determine the current menu item selected
+    let c = event.srcElement;
+
+    //Add active class to selected menu item and remove current
+    for (x = 0; x < 4; x++) {
+      if (c === menuItems[x]) {
+        menuItems[x].classList.add("active");
+        current.classList.remove("active");
+        current = menuItems[x];
+      }
+    }
+  }
+}, false);
+//MOBILE MENU - clicking on the hamburger icon opens up the dropdown menu
 //Gather variables
 let hamburger = document.getElementsByClassName('hamburger-menu');
 let mobileMenu = document.getElementsByClassName('menu-wrapper')[0];
