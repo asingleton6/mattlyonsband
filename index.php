@@ -52,28 +52,28 @@
       <div class="row-wrapper">
         <h2>Events</h2>
         <div class="grid-item l-event">
-          <div class="date">March 15</div>
-          <div class="location">Rose and crown</div>
-          <div class="city">Atlanta, GA</div>
-          <div class="time">8:00</div>
+          <div class="date">April 27</div>
+          <div class="location">Pour</div>
+          <div class="city">Brookhaven, GA</div>
+          <div class="time">8:00pm</div>
         </div>
         <div class="grid-item l-event">
-          <div class="date">March 21</div>
-          <div class="location">Solis</div>
-          <div class="city">Atlanta, GA</div>
-          <div class="time">8:00</div>
-        </div>
-        <div class="grid-item l-event">
-          <div class="date">March 22</div>
-          <div class="location">Line Creak</div>
+          <div class="date">April 28</div>
+          <div class="location">Big Shots</div>
           <div class="city">Peachtree City, GA</div>
-          <div class="time">8:00</div>
+          <div class="time">1:30pm</div>
         </div>
         <div class="grid-item l-event">
-          <div class="date">March 29</div>
+          <div class="date">May 3</div>
           <div class="location">The Bays</div>
-          <div class="city">Atlanta, GA</div>
-          <div class="time">8:00</div>
+          <div class="city">Newnan, GA</div>
+          <div class="time">8:00pm</div>
+        </div>
+        <div class="grid-item l-event">
+          <div class="date">May 5</div>
+          <div class="location">Momma's Bourbon St.</div>
+          <div class="city">Fayetteville, GA</div>
+          <div class="time">3:00pm</div>
         </div>
       </div>
     </div>
