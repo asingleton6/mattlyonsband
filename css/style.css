@@ -204,6 +204,7 @@ p {
   background-color: #474646;
   padding: 5px 30px;
   transition-duration: 0.5s;
+  height: 49px;
 }
 
 /* MOBILE MENU */
@@ -238,6 +239,7 @@ p {
   text-align: center;
   padding: 20px 0;
   margin: 0;
+  box-shadow: 2px 5px 11px rgba(0, 0, 0, .11);
 }
 
 .menu-wrapper ul {
@@ -530,17 +532,6 @@ label {
 }
 
 @media only screen and (min-width: 768px) {
-  .logo {
-    font-size: 2.7rem;
-    transition-duration: 0.5s;
-  }
-
-  .logo-resize {
-    font-size: 2rem;
-    margin-top: 0.3em;
-    transition-duration: 0.5s;
-  }
-
   .l-row {
     padding: 100px 0;
   }
@@ -599,8 +590,23 @@ label {
 }
 
 @media only screen and (min-width: 769px) {
+  .logo {
+    font-size: 2.7rem;
+    transition-duration: 0.5s;
+  }
+
+  .logo-resize {
+    font-size: 2rem;
+    margin-top: 0.3em;
+    transition-duration: 0.5s;
+  }
+
   .hide-desktop {
     display: none;
+  }
+
+  .navbar-background {
+    height: 73px;
   }
 }
 
