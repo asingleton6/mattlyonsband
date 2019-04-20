@@ -182,7 +182,7 @@
     </div>
   </div>
   <script src="scripts.js"></script>
-  <script src="<?php echo auto_version('/script.js'); ?>"></script>
+  <script src="<?php echo auto_version('/scripts.js'); ?>"></script>
 </body>
 
 </html>
