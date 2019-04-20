@@ -1,12 +1,14 @@
 <?php include('email_form.php'); ?>
 <?php include('cache_refresh.php'); ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Product demo for potential investors.">
+  <meta name="author" content="Ashley Singleton">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="<?php echo auto_version('/css/style.css'); ?>" type="text/css" />
   <title>Matt Lyons</title>
 </head>
@@ -178,8 +180,8 @@
       </div>
     </div>
   </div>
-  <script src="scripts.js"></script>
-  <script src="<?php echo auto_version('/scripts.js'); ?>"></script>
+  <!-- <script src="js/scripts.js"></script> -->
+  <script src="<?php echo auto_version('/js/scripts.js'); ?>"></script>
 </body>
 
 </html>
