@@ -161,9 +161,10 @@ function onPlayerReady(event) {
     if (event.target.classList.contains('thumbnail')) {
       //Determine the current thumbnail selected
       let c = event.srcElement;
-
+      console.log(c);
       //Determine which popup window to open
-      for (i = 0; i < 3; i++) {
+      for (i = 0; i < thumbnailCount; i++) {
+        console.log(thumbnails[i]);
         if (c === thumbnails[i]) {
           openPopup(i);
         }
@@ -177,7 +178,7 @@ function onPlayerReady(event) {
       //Determine the current popup window selected
       let c = event.srcElement;
       //Determine which popup window to close
-      for (i = 0; i < 3; i++) {
+      for (i = 0; i < thumbnailCount; i++) {
         if (c === popups[i] || closeButton) {
           closePopup(i);
           players[i].pauseVideo();
