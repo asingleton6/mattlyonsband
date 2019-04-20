@@ -92,6 +92,7 @@ p {
 
 .l-row {
   padding: 50px 0;
+  position: relative;
 }
 
 .l-nav {
@@ -262,6 +263,12 @@ ul.menu-wrapper li a {
 
 .menu-item {
   transform: translateX(-10px);
+}
+
+#events, #media, #biography, #contact {
+  position: absolute;
+  left: 0px;
+  top: -49px;
 }
 
 /* MENU ANIMATION */
@@ -599,6 +606,12 @@ label {
     font-size: 2rem;
     margin-top: 0.3em;
     transition-duration: 0.5s;
+  }
+
+  #events, #media, #biography, #contact {
+    position: absolute;
+    left: 0px;
+    top: -73px;
   }
 
   .hide-desktop {

@@ -45,8 +45,8 @@
         <a class="photo-credit" href="https://www.instagram.com/fleisherphotography" target="_blank">Photo Credit: @fleisherphotography</a>
       </div>
     </div>
-    <div id="events"></div>
     <div class="l-row">
+      <div id="events"></div>
       <div class="row-wrapper">
         <h2>Events</h2>
         <div class="grid-item l-event">
@@ -75,8 +75,8 @@
         </div>
       </div>
     </div>
-    <div id="media"></div>
     <div class="l-row gray-background">
+      <div id="media"></div>
       <div class="row-wrapper position-relative">
         <h2>Media</h2>
         <div id="left-arrow" class="left-arrow"><img src="images/right_arrow.svg"/></div>
@@ -130,8 +130,8 @@
         </div>
       </div>
     </div>
-    <div id="biography"></div>
     <div class="l-row">
+      <div id="biography"></div>
       <div class="row-wrapper padding-mobile">
         <h2>Biography</h2>
         <div class="grid-item l-biography">
@@ -148,8 +148,8 @@
         </div>
       </div>
     </div>
-    <div id="contact"></div>
     <div class="l-row gray-background">
+      <div id="contact"></div>
       <div class="row-wrapper padding-mobile">
         <div class="contact-info">
           <h2>Booking & Contact</h2>
