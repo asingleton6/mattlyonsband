@@ -1,3 +1,25 @@
+//MENU BACKGROUND - change menu background once the user scrolls down the a quarter down the header.
+//Gather variables
+let header = document.querySelector(".l-header");
+let navbar = document.querySelector(".l-nav");
+let logo = document.querySelectorAll(".logo");
+let headerHeight;
+let y = 0;
+
+function navbarBackgroundScroll() {
+  //Get the height of the header
+  headerHeight = header.offsetHeight;
+  headerHeight = (headerHeight / 4);
+  y = document.documentElement.scrollTop;
+  //Change the background from transparent to black
+  if (y > headerHeight) {
+    navbar.classList.add("navbar-background");
+    logo[1].classList.add("logo-resize");
+  } else if (y < headerHeight) {
+    navbar.classList.remove("navbar-background");
+    logo[1].classList.remove("logo-resize");
+  }
+}
 //Mobile menu - clicking on the hamburger icon opens up the dropdown menu
 //Gather variables
 let hamburger = document.getElementsByClassName('hamburger-menu');

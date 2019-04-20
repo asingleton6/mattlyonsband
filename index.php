@@ -11,12 +11,12 @@
   <title>Matt Lyons</title>
 </head>
 
-<body>
+<body onscroll="navbarBackgroundScroll()">
   <div class="l-wrap">
     <div class="l-row">
       <div class="grid-item l-nav">
         <nav class="navbar-mobile hide-desktop">
-          <div class="logo">Matt Lyons</div>
+          <div class="logo"><a href="#">Matt Lyons</a></div>
           <div class="hamburger-menu" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -33,7 +33,7 @@
           </div>
         </nav>
         <nav class="navbar-desktop hide-mobile">
-          <div class="logo">Matt Lyons</div>
+          <div class="logo"><a href="#">Matt Lyons</a></div>
           <ul>
             <li><a class="active" href="#events">Events</a></li>
             <li><a href="#media">Media</a></li>
