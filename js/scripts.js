@@ -81,18 +81,20 @@ navbarMobile.addEventListener('click', function(event) {
 
 //SLIDER CONTROLS
 //Gather variables
+let showingWidth = document.querySelector('.l-media').offsetWidth;
 let slider = document.querySelectorAll('.slider-wrapper');
+let sliderCount = document.querySelectorAll('.slider-wrapper').length;
+let totalWidth = sliderCount * 327;
 let left = document.querySelector('.left-arrow');
 let right = document.querySelector('.right-arrow');
 let position = 0;
+let sliderLimit = (totalWidth - showingWidth) * -1;
 //Hide left arrow on initial load
 left.classList.add("hide-left-arrow");
 
 function slide(arrow) {
   //Gather variables
   let i;
-  let sliderCount = document.querySelectorAll('.slider-wrapper').length;
-
   //Move slider items to the left until it reaches the beginning
   if (arrow === 'left' && position !== 0) {
     //Move by 150px
@@ -105,9 +107,8 @@ function slide(arrow) {
       left.classList.add("hide-left-arrow");
     }
   }
-
   //Move slider items to the right until it reaches the limit
-  if (arrow === 'right' && position !== -300) {
+  if (arrow === 'right' && position > sliderLimit) {
     //Move by 150px
     position = position - 150;
     for (i = 0; i < sliderCount; i++) {
