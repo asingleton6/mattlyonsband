@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Product demo for potential investors.">
   <meta name="author" content="Ashley Singleton">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="<?php echo auto_version('/css/style.css'); ?>" type="text/css" />
   <title>Matt Lyons</title>
 </head>
@@ -49,32 +49,10 @@
     </div>
     <div class="l-row">
       <div id="events"></div>
-      <div class="row-wrapper">
+      <button id="authorize_button" style="display: none;">Authorize</button>
+      <button id="signout_button" style="display: none;">Sign Out</button>
+      <div id="content" class="row-wrapper">
         <h2>Events</h2>
-        <div class="grid-item l-event">
-          <div class="date">April 27</div>
-          <div class="location">Pour</div>
-          <div class="city">Brookhaven, GA</div>
-          <div class="time">8:00pm</div>
-        </div>
-        <div class="grid-item l-event">
-          <div class="date">April 28</div>
-          <div class="location">Big Shots</div>
-          <div class="city">Peachtree City, GA</div>
-          <div class="time">1:30pm</div>
-        </div>
-        <div class="grid-item l-event">
-          <div class="date">May 3</div>
-          <div class="location">The Bays</div>
-          <div class="city">Newnan, GA</div>
-          <div class="time">8:00pm</div>
-        </div>
-        <div class="grid-item l-event">
-          <div class="date">May 5</div>
-          <div class="location">Momma's Bourbon St.</div>
-          <div class="city">Fayetteville, GA</div>
-          <div class="time">3:00pm</div>
-        </div>
       </div>
     </div>
     <div class="l-row gray-background">
@@ -177,7 +155,11 @@
       </div>
     </div>
   </div>
-  <!-- <script src="js/scripts.js"></script> -->
+  <script src="js/calendar-api.js"></script>
+  <script src="js/scripts.js"></script>
+  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+  </script>
+  <script src="<?php echo auto_version('/js/calendar-api.js'); ?>"></script>
   <script src="<?php echo auto_version('/js/scripts.js'); ?>"></script>
 </body>
 

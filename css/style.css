@@ -344,6 +344,10 @@ ul.menu-wrapper li a {
   font-weight: 300;
 }
 
+#signout_button, #authorize_button {
+  display: none !important;
+}
+
 /* MEDIA */
 .slider-wrapper {
   position: relative;
